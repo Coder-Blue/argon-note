@@ -59,3 +59,16 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Donate
+You can support financially with this QR code bank scanning, thank you very much <3:
+![BIDV](https://github.com/Coder-Blue/argon-note/blob/main/donation/IMG_4049.jpg?raw=true) 
+
+## Support
+- You can ask me if there is any problem:
+
+Join my Discord server: https://discord.gg/5Nmwm24dWV
+
+Email contact: trananhquan1009@gmail.com
+
+Facebook contact: [Noah Trần](https://www.facebook.com/noah.tran1109)
