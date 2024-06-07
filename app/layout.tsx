@@ -12,6 +12,11 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Argon",
   description: "Ứng dụng ghi chú hiện đại dành cho người Việt",
+  icons: [
+    {
+      url: "/logo.png",
+    },
+  ],
 };
 
 export default function RootLayout({
