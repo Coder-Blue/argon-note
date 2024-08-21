@@ -1,4 +1,4 @@
-import { streamText } from "ai";
+import { convertToCoreMessages, streamText } from "ai";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
 import { NextResponse } from "next/server";
 
@@ -34,7 +34,6 @@ const model = google("gemini-1.5-pro", {
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
-    const data = JSON.stringify(messages);
 
     if (!apiKey)
       return new NextResponse("Không tìm thấy API cho Google Gemini", {
@@ -47,7 +46,7 @@ export async function POST(req: Request) {
       model: model,
       system:
         "Bạn là một trợ lý AI thân thiện, luôn trả lời câu hỏi theo cách dễ hiểu nhưng bài bản tạo cảm giác như nói chuyện với một giáo viên cấp 3 chuyên nghiệp.",
-      prompt: data,
+      messages: convertToCoreMessages(messages),
       temperature: 1,
       topP: 0.95,
       topK: 64,
