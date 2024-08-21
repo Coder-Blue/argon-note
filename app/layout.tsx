@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Take note app",
     "argon",
     "argon-note",
-    "React-19",
+    "React",
     "NextJS",
     "Ứng dụng",
     "Lấy note",
