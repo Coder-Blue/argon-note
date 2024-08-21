@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import { Quicksand } from "next/font/google";
+=======
+import { Outfit } from "next/font/google";
+import "./globals.css";
+>>>>>>> 39f574211871bd38a767e60931e8f3e1a1d1544c
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import ConvexClientProvider from "@/components/provider/convex-provider";
 import { EdgeStoreProvider } from "@/lib/edgestore";
 import ModalProvider from "@/components/provider/modals-provider";
+<<<<<<< HEAD
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
@@ -48,6 +54,19 @@ export const metadata: Metadata = {
       },
     ],
   },
+=======
+
+const outfit = Outfit({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Argon",
+  description: "Ứng dụng ghi chú hiện đại dành cho người Việt",
+  icons: [
+    {
+      url: "/logo.png",
+    },
+  ],
+>>>>>>> 39f574211871bd38a767e60931e8f3e1a1d1544c
 };
 
 export default function RootLayout({
@@ -57,7 +76,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" suppressHydrationWarning>
+<<<<<<< HEAD
       <body className={quicksand.className}>
+=======
+      <body className={outfit.className}>
+>>>>>>> 39f574211871bd38a767e60931e8f3e1a1d1544c
         <ConvexClientProvider>
           <EdgeStoreProvider>
             <ThemeProvider
@@ -73,7 +96,10 @@ export default function RootLayout({
             </ThemeProvider>
           </EdgeStoreProvider>
         </ConvexClientProvider>
+<<<<<<< HEAD
         <Analytics />
+=======
+>>>>>>> 39f574211871bd38a767e60931e8f3e1a1d1544c
       </body>
     </html>
   );
