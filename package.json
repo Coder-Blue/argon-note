@@ -31,10 +31,10 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
-    "convex": "^1.14.1",
+    "convex": "^1.14.3",
     "emoji-picker-react": "^4.11.1",
     "lucide-react": "^0.429.0",
-    "next": "^14.2.5",
+    "next": "^14.2.6",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -60,6 +60,6 @@
     "prettier-plugin-tailwindcss": "^0.6.6",
     "tailwindcss": "^3.4.10",
     "eslint": "^9.9.0",
-    "eslint-config-next": "^14.2.5"
+    "eslint-config-next": "^14.2.6"
   }
 }
