@@ -1,0 +1,12 @@
+tr {
+  @apply border-t border-solid border-t-[#c6cbd1] bg-[#fff] dark:text-black;
+}
+
+th,
+td {
+  @apply border border-solid border-[#dfe2e5] px-[13px] py-1.5 dark:text-black;
+}
+
+table tr:nth-child(2n) {
+  @apply bg-[#f6f8fa] dark:text-black;
+}
