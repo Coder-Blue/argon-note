@@ -4,10 +4,7 @@ import Markdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import remarkGfm from "remark-gfm";
-import rehypeKatex from "rehype-katex";
-import remarkMath from "remark-math";
 import "@/components/Chat/styles/Module.css";
-import "katex/dist/katex.min.css";
 
 interface MarkdownResponseProps {
   content: string;
@@ -22,8 +19,7 @@ interface CodeProps {
 export default function MarkdownResponse({ content }: MarkdownResponseProps) {
   return (
     <Markdown
-      remarkPlugins={[remarkGfm, remarkMath]}
-      rehypePlugins={[rehypeKatex]}
+      remarkPlugins={[remarkGfm]}
       components={{
         code(props: CodeProps) {
           const { children, className, node, ...rest } = props;
